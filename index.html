@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Tela de Inicio</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden; /* Evita que a barra de rolagem apareça */
+    }
+
+    .img-container {
+      position: relative;
+      width: 100%;
+      height: 100vh; /* A imagem ocupará a altura total da tela */
+      overflow: hidden; /* Certifique-se de que a imagem não ultrapasse o contêiner */
+    }
+
+    .img-inicio {
+      width: 100%; /* A imagem ocupará a largura total do contêiner */
+      height: 100%; /* A imagem ocupará a altura total do contêiner */
+      object-fit: cover; /* Redimensiona a imagem para cobrir todo o contêiner */
+    }
+
+    .start {
+      position: absolute;
+      top: 10%;
+      left: 90%;
+      transform: translate(-50%, -50%);
+      z-index: 1; /* Certifique-se de que o botão apareça acima da imagem */
+      width: 100px;
+      padding: 5px;
+      border: 1px solid #000;
+      border-radius: 5px ;
+      background-color: rgb(52, 68, 52);
+      color: #fff;
+      cursor: pointer;
+    }
+    .start:hover{
+      color: #000;
+      background-color: aqua;
+    }
+
+    /* Media Query para dispositivos com largura menor ou igual a 768px (tablets e smartphones) */
+    @media (max-width: 768px) {
+      .img-container {
+        height: 100vh !important; /* Ajusta a altura para ocupar a tela toda */
+      }
+      .img-inicio {
+        width: 100%; /* Ajusta a largura para ocupar a tela toda */
+        height: 100vh; /* Ajusta a altura para ocupar a tela toda */
+      }
+      .start {
+        position: relative; /* Altera a posição do botão para o fluxo normal do documento */
+        top: 0;
+        left: 0;
+        transform: none;
+        margin: 10px auto;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="img-container">
+    <img src="images/mario2.gif" class="img-inicio">
+    <a href="jogo.html"><button class="start">Start</button></a>
+  </div>
+</body>
+</html>

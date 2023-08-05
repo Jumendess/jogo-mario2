@@ -119,27 +119,3 @@
   background-color: #e74c3c;
   color: white;
 }
-
-/* Ajustes para dispositivos móveis em modo paisagem */
-@media screen and (max-width: 768px) and (orientation: landscape) {
-  .game-board {
-    height: 250px;
-    transform: translateY(50px); /* Deslocamento para baixo */
-  }
-
-  .pipe {
-    width: 40px;
-  }
-
-  .mario {
-    width: 75px;
-  }
-
-  .clouds {
-    width: 200px;
-  }
-
-  .game-over-dialog {
-    font-size: 14px;
-  }
-}

@@ -120,8 +120,8 @@
   color: white;
 }
 
-/* Ajustes para orientação em paisagem (landscape) */
-@media screen and (orientation: landscape) {
+/* Ajustes para dispositivos móveis em modo paisagem */
+@media screen and (max-width: 768px) and (orientation: landscape) {
   .game-board {
     height: 250px;
   }
@@ -140,28 +140,5 @@
 
   .game-over-dialog {
     font-size: 14px;
-  }
-}
-
-/* Ajustes para orientação em retrato (portrait) */
-@media screen and (orientation: portrait) {
-  .game-board {
-    height: 450px;
-  }
-
-  .pipe {
-    width: 80px;
-  }
-
-  .mario {
-    width: 150px;
-  }
-
-  .clouds {
-    width: 400px;
-  }
-
-  .game-over-dialog {
-    font-size: 16px;
   }
 }

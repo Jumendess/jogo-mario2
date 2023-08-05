@@ -55,11 +55,12 @@
         height: 100vh; /* Ajusta a altura para ocupar a tela toda */
       }
       .start {
-        position: relative; /* Altera a posição do botão para o fluxo normal do documento */
-        top: 0;
-        left: 0;
+        position: fixed; /* Fixa o botão na tela */
+        top: 20px;
+        left: 10px; /* Posiciona o botão no canto superior direito */
         transform: none;
-        margin: 10px auto;
+        z-index: 2; /* Aumenta o z-index para que fique acima da imagem */
+        margin: 0; /* Remove a margem */
         display: block;
       }
     }

@@ -129,6 +129,7 @@ body {
 @media screen and (max-width: 768px) and (orientation: landscape) {
   .game-board {
     height: 250px;
+    transform: translateY(50px); /* Deslocamento para baixo */
   }
 
   .pipe {

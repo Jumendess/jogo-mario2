@@ -6,8 +6,8 @@
 
 /* tela de inicio */
 .game-board {
-  width: 100%;
-  height: 450px;
+  width: 2400px; /* Largura de 2400 pixels */
+  height: 1080px; /* Altura de 1080 pixels */
   border-bottom: 15px solid #34cc27;
   margin: 0 auto;
   position: relative;
@@ -123,8 +123,8 @@
 /* Estilos padrão para a página em modo paisagem e não-mobile */
 @media screen and (orientation: landscape) {
   .game-board {
-    width: 100%;
-    height: 450px;
+    width: 2400px; /* Largura de 2400 pixels */
+    height: 1080px; /* Altura de 1080 pixels */
     /* Outros estilos... */
   }
 }

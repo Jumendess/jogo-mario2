@@ -23,12 +23,14 @@
     <button class="exit-button" id="exitButton">Sair</button>
   </div>
     <script>
-      const mario = document.querySelector('.mario');
+     const mario = document.querySelector('.mario');
     const pipe = document.querySelector('.pipe');
     const clouds = document.querySelector('.clouds');
     const gameOverDialog = document.getElementById('gameOverDialog');
     const restartButton = document.getElementById('restartButton');
     const exitButton = document.getElementById('exitButton');
+
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
     const jump = () => {
       mario.classList.add('jump');
@@ -72,7 +74,13 @@
       }
     }, 10);
 
+    // Event listener for keydown to trigger jump
     document.addEventListener('keydown', jump);
+
+    // Event listener for touchstart to trigger jump on mobile devices
+    if (isMobile) {
+      document.addEventListener('touchstart', jump);
+    }
 
     </script>
 

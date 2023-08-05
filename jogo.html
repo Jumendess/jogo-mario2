@@ -1,29 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="images/favicon-mario.jpg" type="image/x-icon">
-  <script defer src="script.js" ></script>
-
-  <title>Jogo Mario</title>
+  <!-- Your existing head content -->
 </head>
 <body>
-  <div class="game-board">
-    <img src="images/clouds.png" class="clouds">
-    <img src="images/mario.gif" class="mario">
-    <img src="images/pipe.png" class="pipe">
-  </div>
+  <!-- Your existing body content -->
 
-  <div class="game-over-dialog" id="gameOverDialog">
-    <div class="game-over-text">Game Over</div>
-    <img src="images/mario3.png" alt="Game Over" class="game-over-image">
-    <button class="restart-button" id="restartButton">Reiniciar</button>
-    <button class="exit-button" id="exitButton">Sair</button>
-  </div>
-    <script>
-      const mario = document.querySelector('.mario');
+  <script>
+    const mario = document.querySelector('.mario');
     const pipe = document.querySelector('.pipe');
     const clouds = document.querySelector('.clouds');
     const gameOverDialog = document.getElementById('gameOverDialog');
@@ -72,9 +56,11 @@
       }
     }, 10);
 
+    // Event listener for keydown to trigger jump
     document.addEventListener('keydown', jump);
 
-    </script>
-
+    // Event listener for touchstart to trigger jump
+    document.addEventListener('touchstart', jump);
+  </script>
 </body>
 </html>

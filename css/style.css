@@ -6,8 +6,8 @@
 
 /* tela de inicio */
 .game-board {
-  width: 2400px; /* Largura de 2400 pixels */
-  height: 1080px; /* Altura de 1080 pixels */
+  width: 100%;
+  height: 450px;
   border-bottom: 15px solid #34cc27;
   margin: 0 auto;
   position: relative;
@@ -123,8 +123,8 @@
 /* Estilos padrão para a página em modo paisagem e não-mobile */
 @media screen and (orientation: landscape) {
   .game-board {
-    width: 2400px; /* Largura de 2400 pixels */
-    height: 1080px; /* Altura de 1080 pixels */
+    width: 100%;
+    height: 450px;
     /* Outros estilos... */
   }
 }
@@ -133,7 +133,7 @@
 @media screen and (max-width: 767px) and (orientation: landscape) {
   .game-board {
     width: 100vh; /* Usar a altura da tela como width */
-    height: 100vw; /* Usar a largura da tela como height */
+    height: 80vw; /* Usar a largura da tela como height */
     /* Outros estilos... */
   }
 }

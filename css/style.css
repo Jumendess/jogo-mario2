@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow: hidden; /* Impede o scroll na página */
+  touch-action: none; /* Impede a ação padrão do toque, evitando que a tela role */
+}
+
 /* tela de inicio */
 .game-board {
   width: 100%;

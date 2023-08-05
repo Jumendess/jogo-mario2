@@ -119,3 +119,19 @@
   background-color: #e74c3c;
   color: white;
 }
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 767px) {
+  .game-board {
+    width: 100vw; /* Usar a largura da tela como width */
+    height: 100vh; /* Usar a altura da tela como height */
+  }
+}
+
+/* Estilos para desktops */
+@media screen and (min-width: 768px) {
+  .game-board {
+    width: 100%;
+    height: 450px;
+  }
+}

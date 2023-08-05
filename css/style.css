@@ -128,7 +128,7 @@ body {
 /* Ajustes para dispositivos móveis em modo paisagem */
 @media screen and (max-width: 768px) and (orientation: landscape) {
   .game-board {
-    height: 250px;
+    height: 220px;
   }
 
   .pipe {

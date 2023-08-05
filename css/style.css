@@ -119,3 +119,49 @@
   background-color: #e74c3c;
   color: white;
 }
+
+/* Ajustes para orientação em paisagem (landscape) */
+@media screen and (orientation: landscape) {
+  .game-board {
+    height: 250px;
+  }
+
+  .pipe {
+    width: 40px;
+  }
+
+  .mario {
+    width: 75px;
+  }
+
+  .clouds {
+    width: 200px;
+  }
+
+  .game-over-dialog {
+    font-size: 14px;
+  }
+}
+
+/* Ajustes para orientação em retrato (portrait) */
+@media screen and (orientation: portrait) {
+  .game-board {
+    height: 450px;
+  }
+
+  .pipe {
+    width: 80px;
+  }
+
+  .mario {
+    width: 150px;
+  }
+
+  .clouds {
+    width: 400px;
+  }
+
+  .game-over-dialog {
+    font-size: 16px;
+  }
+}
